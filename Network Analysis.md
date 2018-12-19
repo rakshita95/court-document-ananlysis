@@ -5,7 +5,7 @@ The appeal documents often cite other court cases at multiple instances. During 
 
 We construct a graph network such that the nodes represent court cases and two court cases are connected by an edge if one court case cites the other one.  These edges have a direction as we know which case cites which one. A network constructed this way has a total of 125 nodes and 101 edges.  The network formed this way can be visualized as shown in figure below. Note that the nodes have been positioned in a force directed layout so that there are as few crossing edges as possible. Red dots indicate various cases. Also, arrows in the edges have been omitted for simplicity.
 
-![Figure1](/img/whole_network.png)
+![Figure1](/img/whole_network.png)  
 **Figure 1: Visualization of the whole citation network**
 
 However, given the large number of cases, the properties of the network are not evident from the visualization. Hence, we need to look at a few objective metrics as shown in Table below. 
@@ -38,7 +38,7 @@ people v williams | 3
 people v edmonson | 2
 people v lynes | 2
 
-**c.	Cases which refer to any cases**
+**c.	Cases which refer to any cases**  
 On average, an appeal document in the corpus cites ~3 different cases. The cases with most number of references are listed in table below. 
 
 Case Name	| Number of papers referred to by the case
@@ -56,14 +56,15 @@ As we saw in the beginning, the citation network is sparse and not fully connect
 The largest component of the network that is fully connected has 29 nodes and 28 edges. On average, every case either references or is referenced by atleast one other case. This large connected network can be visualized much more clearly as shown in figure below. The yellow nodes represent the cases and edges are directed with the thicker side denoting the head of the arrow and thinner line denoting the tail. The nodes are labelled by the case names. The size of the node represents the number of cases citing that case. The largest nodes represent the most influential cases that were cited most often.
 
 ![Figure2](/img/large_comp.png)
+**Figure 2: Largest connected component of the citation network**
 
 We observe that people vs romero and people vs williams are the most influential papers with 4 and 3 cases citing them. The rest of the cases cited by only one of the case documents.
 
 In order to better understand the dynamics of citations better, we can color the nodes based on other attributes. To demonstrate this, I colored the nodes with the type of social media instrument used as evidence as shown in Figure 3. This time, the size of node represents the number of cases cited by the node. Among other things, such a visualization can help theorize in which context a case was cited most often
 
-![Figure3](/img/label.png)
-![Figure3](/img/col_large_comp.png)
-
+![label](/img/label.png)
+![Figure3](/img/col_large_comp.png)  
+**Figure 3: Largest connected component of the whole citation network colored by evidence type**
 
 ## Conclusion, Limitations and Future Work
 
