@@ -51,7 +51,7 @@ people v spears	| 6
 All the above cases are murder or sexual assault cases and where mostly Facebook photographs, posts and messages were used as evidence.
 
 **d.	Connected networks**  
-As we saw in the beginning, the citation network is sparse and not fully connected. In other words, there are many instances where an appeals document cites a case or two but these are not cited by another documents in the corpus. I observed that there are 25 such completely disconnected networks or cliques in the citation network. Most of the cliques consist of only 2 nodes and are very small. Such smaller networks are not very insightful and can be ignored. So, let's start by analyzing the largest clique.
+As we saw in Figure 1, the citation network is sparse and not fully connected. In other words, there are many instances where an appeals document cites a case or two but these are not cited by another documents in the corpus. I observed that there are 25 such completely disconnected networks or cliques in the citation network. Most of the cliques consist of only 2 nodes and are very small. Such smaller networks are not very insightful and can be ignored. So, let's start by analyzing the largest clique.
 
 The largest component of the network that is fully connected has 29 nodes and 28 edges. On average, every case either references or is referenced by atleast one other case. This large connected network can be visualized much more clearly as shown in figure below. The yellow nodes represent the cases and edges are directed with the thicker side denoting the head of the arrow and thinner line denoting the tail. The nodes are labelled by the case names. The size of the node represents the number of cases citing that case. The largest nodes represent the most influential cases that were cited most often.
 
@@ -68,7 +68,7 @@ In order to better understand the dynamics of citations better, we can color the
 
 ## Conclusion, Limitations and Future Work
 
-I demonstrated how network analysis tools and visualizations can be employed to understand the dynamics of how various cases were cited. The code to reproduce the analysis can be found in notebook.py. Since only a subset of appeal documents have been annotated, the network is incomplete and we are unable to make any claims with high confidence. However, as more data is accumulated, the network will become denser and trends and clusters will become more apparent.
+I demonstrated how network analysis tools and visualizations can be employed to understand the dynamics of how various cases were cited. The code to reproduce the analysis can be found in [citation.ipynb](https://github.com/rakshita95/court-document-ananlysis/blob/master/citation.ipynb). Since only a subset of appeal documents have been annotated, the network is incomplete and we are unable to make any claims with high confidence. However, as more data is accumulated, the network will become denser and trends and clusters will become more apparent.
 
 For next steps, it would be useful to automate the process of detecting citations without relying on manual annotations. The challenge here is limit the citations to only those that were cited in relation to social media. Future work may also focus on leveraging 3D graph visualization tools like Gephi and Neo4j to visualize the network. This is quite straightforward and can help the user better interact with the graph as network grows.
 
