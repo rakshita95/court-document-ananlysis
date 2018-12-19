@@ -9,7 +9,7 @@ The goal of this project is to develop tools to mine the court documents to anal
 To achieve the goal of the project, I developed tools to analyze the semi-structured and unstructured data along multiple dimensions. 
 
 * Analyzing the annotated court documents
-* [Topic Modelling:](hhttps://github.com/rakshita95/court-document-ananlysis/blob/master/Topic%20Modelling.md) Analyzing the results of topic modelling of appeal documents to uncover hidden themes from the unstructured text.
+* [Topic Modelling:](https://github.com/rakshita95/court-document-ananlysis/blob/master/Topic%20Modelling.md) Analyzing the results of topic modelling of appeal documents to uncover hidden themes from the unstructured text.
 * [Network Analysis:](https://github.com/rakshita95/court-document-ananlysis/blob/master/Network%20Analysis.md) Analysing the citation Network of cases referenced in the documents in corpus to understand the influence of prior cases.
 
 Click on the corresponding links for detailed of each of the analyses.
