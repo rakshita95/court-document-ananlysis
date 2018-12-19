@@ -10,7 +10,7 @@ To achieve the goal of the project, I developed tools to analyze the semi-struct
 
 * Analyzing the annotated court documents
 * Topic Modelling of appeal documents to uncover hidden themes
-* [Network Analysis:](http://github.com) Analysing the citation Network of cases referenced in the documents in corpus to understand the influence of prior cases.
+* [Network Analysis:](https://github.com/rakshita95/court-document-ananlysis/blob/master/Network%20Analysis.md) Analysing the citation Network of cases referenced in the documents in corpus to understand the influence of prior cases.
 
 Click on the corresponding links for detailed of each of the analyses.
 
