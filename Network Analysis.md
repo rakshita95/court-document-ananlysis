@@ -37,7 +37,7 @@ people v williams | 3
 people v edmonson | 2
 people v lynes | 2
 
-c.	Cases which refer to any cases
+**c.	Cases which refer to any cases**
 On average, an appeal document in the corpus cites ~3 different cases. The cases with most number of references are listed in table below. 
 
 Case Name	| Number of papers referred to by the case
