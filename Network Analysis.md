@@ -6,6 +6,7 @@ The appeal documents often cite other court cases at multiple instances. During 
 We construct a graph network such that the nodes represent court cases and two court cases are connected by an edge if one court case cites the other one.  These edges have a direction as we know which case cites which one. A network constructed this way has a total of 125 nodes and 101 edges.  The network formed this way can be visualized as shown in figure below. Note that the nodes have been positioned in a force directed layout so that there are as few crossing edges as possible. Red dots indicate various cases. Also, arrows in the edges have been omitted for simplicity.
 
 ![Figure1](/img/whole_network.png)
+**Figure 1: Visualization of the whole citation network**
 
 However, given the large number of cases, the properties of the network are not evident from the visualization. Hence, we need to look at a few objective metrics as shown in Table below. 
 
