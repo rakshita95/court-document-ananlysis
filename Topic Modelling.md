@@ -31,12 +31,33 @@ Another key aspect about topic models is that they are unsupervised. As a result
 1.	**Exploring word clusters**  
 The screenshot below is that of an interactive GUI that can be used to develop a deeper understanding of the topic clusters. In the 2D plot on the left, each circle represents a topic. Topics that are more similar are closer on the 2D plane. We say that two topics are more similar if they share more keywords. By default, the bar plot to the right shows the most frequent words in the keywords. By hovering over one of the topic circles, the bars will rearrange to show the most frequent words in the topic. Moreover, hovering over the words in bar chart also highlights the topic circles that contain the word. Sometimes if frequent stop words are not dealt with as discussed previously, the end up being shared among multiple topics making it difficult to interpret the topic. In such cases, the sliding bar on the top right can be adjusted to set the relevance metric such that words that are more specific to the topic are at the top. 
  ![webapp](/img/webapp.png)  
+ 
 2.	**Examining top documents under each topic**
--	understand what the themes are.  While in most cases, a glance at the topic words (top words) belonging to the topic  
+Each court document is composed of multiple topics. For example, People vs Santiago is 44% topic 0 and 29% topic 2 and 28% topic 3. This way, once the topic model is estimated, we can find the dominant theme in each document. Similarly, we can also list the most representative documents for each of the topics. That is, documents that have highest proportion of that particular topic.  Table below shows the most representative documents for each of the topics and their respective proportions. 
 
-The next set of functionalities is used to generate insights from these themes.
-1.	Temporal trends
-2.	How themes vary by 3rd dimension.
+Topic | Percent Contribution	| Most representative case
+------------ | ------------- |---------------------
+1	| 44.3	| Paul v Santiago
+2	| 74.96 |	St. Paul's Sch. of Nursing, Inc. v. Papaspirid
+3	| 55.07	| People v Jackson
+4	| 41.48	| People vs McEvoy
+
+As topic words (top words belonging to the topic) alone may not give a good understanding of the topic, one can analyze the most representative document for better understanding. 
+
+However, note that in this case even the most representative documents are composed of less than 50% of the topic except topic 2. This could be because appeals documents are worded very similarly and themes are more or less uniformly distributed in all documents. This is a violation of assumption 2.
+
+2.	**Leveraging meta data**
+
+Since the documents are annotated with the type of social media evidence used, platform used and type of offence. We check if a particular topic is mostly prsent in court cases dealing with a particular form of evidence, platform, offence etc. Thus, the aditional data can also be leverage to label the topics. Currebtly, I didnot see any such striking differences between topics. But as more documents are labelled, we can expect to see more structure and meta data can be used to test any theories about what the topic might represent. 
+
+
+## Applications  
+Once the topics are labelled as per the suggestions above, it becomes straightforward to answer many useful questions such as:
+* How are topics distributed across time? Do different themes dominate at different points in time?  
+* How does topic distribution change for cases where photographs are used as evidence vs cases where videos were used?
+* How does topic distribution differ between sexual assault, murder and robbery cases?
+* How does topic distribution differ between different social media platforms?
+
 
 ## Conclusion, Limitation and Future Work
 
