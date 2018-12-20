@@ -3,7 +3,17 @@
 The goal of this project is to develop tools to mine the court documents to analyze in which context social media was used as an evidence. 
 
 ## Description of the data
-The dataset consists of 81 appeal documents of court cases. Among these, 39 have been annotated and converted into a semi structured format. Each dataset is described 
+The dataset consists of 81 appeal documents of court cases in the pdf format. Among these, 39 have been annotated and converted into a semi structured format. Each document has been annotated according to the following codes:
+
+* Case Name
+* Type of offence: Nature of offence. For example, murder, robbery etc.
+* Overall Outcome of the appeal (exactly as it appears in the document)
+* Outcome in relation to the social media evidence (exactly as it appears in the document)
+* Evidence Type: Type of social media evidence cited in the document such as photographs, videos etc.
+* Platform: Facebook,twitter etc.
+* Support: Discussion around authenticating the social media evidence (exactly as it appears in the document)
+* Prior cases influence: List of other cases cited in relation to social media.
+
 ## Analysis
 
 To achieve the goal of the project, I developed tools to analyze the semi-structured and unstructured data along multiple dimensions. 
