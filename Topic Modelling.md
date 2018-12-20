@@ -18,7 +18,7 @@ In this project, I employed Latent Dirichlet Allocation which is a commonly used
 
  * Choosing number of topics: 
  All topic models expect the number of topics to be pre-specified. I chose number of topics such that topic coherence score (information theoretic approach) are maximized. For example, the figure below shows how coherence scores vary as number of topics in increased. Based on the plot specifying 5 topics seems to be a good idea.  
- ![coherence](/img/label.png)  
+ ![coherence](/img/coherence.png)  
  While these coherence scores were found to correlate with human judgement most of the time, the user should feel free to increase/ descrease the number of metrics such that the topics makes most sense.  
  * Removing common words: I removed words like 'the', 'and' etc. that occur commonly across the corpus but do not hold any significance. They can degrade the performance of the topic model. These words are called stop words. However, one may need to extend the list of stop words to include domain specific stop words like defendant, complainant, testimony etc. This can make a huge difference to interpretability of the topic.  
 
@@ -28,10 +28,10 @@ We will see that some of the tools discussed later in the report will be helpful
 
 Another key aspect about topic models is that they are unsupervised. As a result, it is upto the user/ domain expert to decipher which subject the topics refer to and appropriately label the topic. In this project, I developed tools to help the expert/ user label the topics discovered. In this section, I will walk you through how the various tools can be used by running a topic model on all texts referring to social media in the court documents. In annotated documents, social media specific is obtained by simply concatenating the outcome and support.  
 
-1.	Exploring word clusters
+1.	**Exploring word clusters**
 The screenshot below is that of an interactive GUI that can be used to develop a deeper understanding of the topic clusters. In the 2D plot on the left, each circle represents a topic. Topics that are more similar are closer on the 2D plane. We say that two topics are more similar if they share more keywords. By default, the bar plot to the right shows the most frequent words in the keywords. By hovering over one of the topic circles, the bars will rearrange to show the most frequent words in the topic. Moreover, hovering over the words in bar chart also highlights the topic circles that contain the word. Sometimes if frequent stop words are not dealt with as discussed previously, the end up being shared among multiple topics making it difficult to interpret the topic. In such cases, the sliding bar on the top right can be adjusted to set the relevance metric such that words that are more specific to the topic are at the top. 
  ![webapp](/img/webapp.png)  
-2.	Examining top documents under each topic
+2.	**Examining top documents under each topic**
 -	understand what the themes are.  While in most cases, a glance at the topic words (top words) belonging to the topic  
 
 The next set of functionalities is used to generate insights from these themes.
