@@ -28,7 +28,7 @@ We will see that some of the tools discussed later in the report will be helpful
 
 Another key aspect about topic models is that they are unsupervised. As a result, it is upto the user/ domain expert to decipher which subject the topics refer to and appropriately label the topic. In this project, I developed tools to help the expert/ user label the topics discovered. In this section, I will walk you through how the various tools can be used by running a topic model on all texts referring to social media in the court documents. In annotated documents, social media specific is obtained by simply concatenating the outcome and support.  
 
-1.	**Exploring word clusters**
+1.	**Exploring word clusters**  
 The screenshot below is that of an interactive GUI that can be used to develop a deeper understanding of the topic clusters. In the 2D plot on the left, each circle represents a topic. Topics that are more similar are closer on the 2D plane. We say that two topics are more similar if they share more keywords. By default, the bar plot to the right shows the most frequent words in the keywords. By hovering over one of the topic circles, the bars will rearrange to show the most frequent words in the topic. Moreover, hovering over the words in bar chart also highlights the topic circles that contain the word. Sometimes if frequent stop words are not dealt with as discussed previously, the end up being shared among multiple topics making it difficult to interpret the topic. In such cases, the sliding bar on the top right can be adjusted to set the relevance metric such that words that are more specific to the topic are at the top. 
  ![webapp](/img/webapp.png)  
 2.	**Examining top documents under each topic**
