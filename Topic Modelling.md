@@ -63,5 +63,5 @@ Once the topics are labelled as per the suggestions above, it becomes straightfo
 
 ## Conclusion, Limitation and Future Work
 
-In this report, I laid out the analysis approach for how topic modelling can be potentially employed to derive insights once sufficient number of annotations have been labelled. Notebook.py demonstrates the usage of various tools I developed. It is well documented and provides interface to specify the number of clusters and custom stop words and displays results from the various tools described above. 
+In this report, I laid out the analysis approach for how topic modelling can be potentially employed to derive insights once sufficient number of annotations have been labelled. [This notebook ](https://github.com/rakshita95/court-document-ananlysis/blob/master/annotated-topic-model.ipynb) demonstrates the usage of various tools I developed. It is well documented and provides interface to specify the number of clusters and custom stop words and displays results from the various tools described above. 
 
