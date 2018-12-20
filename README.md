@@ -18,7 +18,7 @@ The dataset consists of 81 appeal documents of court cases in the pdf format. Am
 
 To achieve the goal of the project, I developed tools to analyze the semi-structured and unstructured data along multiple dimensions. 
 
-* Analyzing the annotated court documents
+* [Overall Analysis:](https://github.com/rakshita95/court-document-ananlysis/blob/master/overall-analysis.md) Analyzing the annotated court documents for social media platforms and evidence used for various offences. 
 * [Topic Modelling:](https://github.com/rakshita95/court-document-ananlysis/blob/master/Topic%20Modelling.md) Analyzing the results of topic modelling of appeal documents to uncover hidden themes from the unstructured text.
 * [Network Analysis:](https://github.com/rakshita95/court-document-ananlysis/blob/master/Network%20Analysis.md) Analysing the citation Network of cases referenced in the documents in corpus to understand the influence of prior cases.
 
