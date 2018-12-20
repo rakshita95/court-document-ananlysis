@@ -1,4 +1,4 @@
-# court-document-ananlysis
+# court-document-analysis
 
 The goal of this project is to develop tools to mine the court documents to analyze in which context social media was used as an evidence. 
 
