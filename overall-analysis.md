@@ -23,7 +23,7 @@ Next, we investigate to see which types of evidence ofr used for which types of 
 
 ## Language analysis
 
-The rest of the columns like support, outcome etc. are free text attributed containing text exactly as described in the appeal document. Later, we demonstarte how complex tools like topic modellign can be used to uncover hidden themes in text. Despite that, we can still attempt to answer some simpler questions using other tools. For example, we can ask what words wer most commonly used when authenticating evidence in myspace vs space. 
+The rest of the columns like support, outcome etc. are free text attributes containing text exactly as described in the appeal document. Later, we demonstarte how complex tools like topic modelling can be used to uncover hidden themes in text. Despite that, we can still attempt to answer some simpler questions using other tools. For example, we can ask what words were most commonly used when authenticating evidence from myspace vs facebook. The figure below shows that are more common in myspace (words on top with negative values) versus words that are more common in cases where facebook was used as evidence (words at the bottom with positive values).  However, the way in which these likelihoods were calculated gives too much importance to rare words and can be further refined.
 
 ![Figure4](/img/fbvmsps.png)
 
